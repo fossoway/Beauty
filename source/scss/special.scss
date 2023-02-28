@@ -1,0 +1,53 @@
+.special{
+  background-color: $color_first_background;
+  padding: 80px 0;
+  position: relative;
+  .special__title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 38px;
+  }
+  .special__title:after{
+    content:"";
+    position: absolute;
+    right: 405px;
+    width: 188px;
+    height: 61px;
+    background-image: url("../../img/water.svg");
+  }
+}
+.special__list{
+  display: flex;
+  justify-content: space-between;
+  .special__item{
+    flex-basis: 255px;
+    height: 363px;
+    background-color: $color_second_background;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    .special__text{
+      font-size: 14px;
+      line-height: 20px;
+      color: $color_text_subtitle;
+      text-align: center;
+      max-width: 195px;
+    }
+    .special__price{
+      font-weight: 500;
+      font-size: 21px;
+      line-height: 25px;
+      letter-spacing: 0.05em;
+    }
+    .special__button{
+      color: $color_second_background;
+      @include link-button($color_main,$color_second_background);
+      width: 130px;
+      font-size: 14px;
+      border-color: $color_main;
+    }
+  }
+}

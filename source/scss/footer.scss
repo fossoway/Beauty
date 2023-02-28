@@ -1,0 +1,40 @@
+.footer__contacts{
+  display: flex;
+  justify-content: space-between;
+  padding: 38px 0;
+  align-items: center;
+  .footer__social{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    .footer__link{
+      width: 45px;
+      height: 45px;
+      border: 2px solid $color_main;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      transition: 0.3s;
+      &:hover{
+        transform: scale(1.1);
+        box-shadow: 2px 2px 2px $color_text_subtitle;
+      }
+    }
+  }
+}
+.copyright{
+  background-color: $color_first_background;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: $color_text_copyright;
+  .copyright__wrapper{
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    transition: color 0.3s;
+    .copyright__link:hover{
+      color: $color_main;
+    }
+  }
+}

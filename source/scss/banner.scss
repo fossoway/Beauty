@@ -1,0 +1,45 @@
+.banner{
+  background-color: $color_main;
+  color: $color_second_background;
+  .banner__wrapper{
+    height: 604px;
+    overflow-y: clip;
+    overflow-x: visible;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .banner__description{
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      .banner__title{
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+      }
+      .banner__text{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        max-width: 309px;
+      }
+      .banner__button{
+        color:$color_second_background;
+        @include link-button($color_main,$color_second_background);
+      }
+    }
+  }
+}
+.banner__img{
+  margin-right: -70px;
+  flex-shrink: 0;
+  border: 91px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  background-clip: padding-box;
+  height: 859px;
+  width: 859px;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,16 @@
+%button{
+  border: none;
+  background-color: inherit;
+}
+@mixin link-button($bgColor, $textColor){
+  width: 170px;
+  height: 35px;
+  transition: background-color, color 0.3s;
+  border: 2px solid $textColor;
+  border-radius: 30px;
+  background-color: $bgColor;
+  &:hover{
+    background-color:$textColor;
+    color: $bgColor;
+  }
+}

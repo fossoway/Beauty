@@ -1,0 +1,55 @@
+.add{
+  background-color: $color_first_background;
+  padding: 20px 0 130px 0;
+  color: $color_second_background;
+}
+.add__wrapper{
+  display: flex;
+  justify-content: space-between;
+  .add__title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .add__text{
+    max-width: 235px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .add__button{
+    color:$color_second_background;
+    @include link-button($color_main,$color_second_background);
+  }
+  .add__input{
+    border-radius: 30px;
+    width: 225px;
+    height: 35px;
+    padding-left: 15px;
+    border: none;
+    ::placeholder{
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}
+.add__bonus,
+.add__map{
+  flex-basis: 530px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  background-color: $color_main;
+  padding: 35px 40px;
+}
+.add__bonus{
+  position: relative;
+  &:after {
+    position: absolute;
+    right: 40px;
+    content: "";
+    width: 140px;
+    height: 140px;
+    background-image: url("../../img/mail.svg");
+  }
+}

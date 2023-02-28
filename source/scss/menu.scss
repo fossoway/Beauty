@@ -1,0 +1,16 @@
+.menu {
+  background-color: $color_background_menu;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color_text_subtitle;
+  padding: 17px 0;
+}
+.menu__list{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  .menu__link:hover{
+    color:$color_main;
+  }
+}
